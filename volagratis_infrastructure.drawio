@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.6" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.6" pages="3">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Page-1">
     <mxGraphModel dx="1885" dy="2397" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -215,8 +215,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zQAq5EybRise99rRwNDh-2" value="&lt;a href=&quot;data:page/id,TZ201WaUSHpBQpsREirB&quot;&gt;PAGE 2&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-437" y="-698" width="70" height="30" as="geometry" />
+        <mxCell id="zQAq5EybRise99rRwNDh-2" value="&lt;a href=&quot;data:page/id,TZ201WaUSHpBQpsREirB&quot;&gt;ALB e VPC&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-442" y="-698" width="80" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -262,6 +262,15 @@
         <mxCell id="gsToLSdFo0IppxMBS_la-4" value="AZ eu-west-1c" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_availability_zone;strokeColor=#545B64;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#545B64;dashed=1;" vertex="1" parent="gsToLSdFo0IppxMBS_la-3">
           <mxGeometry width="170" height="300" as="geometry" />
         </mxCell>
+        <mxCell id="eUAzN2NPXyv_5R1AQx1b-38" value="" style="whiteSpace=wrap;html=1;fillColor=none;fontColor=#000000;strokeColor=#0000FF;dashed=1;dashPattern=1 1;strokeWidth=1;" vertex="1" parent="gsToLSdFo0IppxMBS_la-2">
+          <mxGeometry x="10" y="220" width="610" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="eUAzN2NPXyv_5R1AQx1b-40" value="&lt;font color=&quot;#0000ff&quot;&gt;Target group per ECS: il traffico HTTPS che si puó avere mediante ALB con i container viene stabilito grazie al questo target group&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="gsToLSdFo0IppxMBS_la-2">
+          <mxGeometry x="10" y="404" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eUAzN2NPXyv_5R1AQx1b-43" value="SSL certificate, ACM" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#DD344C;strokeColor=#ffffff;dashed=0;verticalLabelPosition=middle;verticalAlign=middle;align=right;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.certificate_manager_3;labelPosition=left;" vertex="1" parent="gsToLSdFo0IppxMBS_la-2">
+          <mxGeometry x="570" y="388" width="46" height="46" as="geometry" />
+        </mxCell>
         <mxCell id="eUAzN2NPXyv_5R1AQx1b-22" value="" style="group" vertex="1" connectable="0" parent="gsToLSdFo0IppxMBS_la-1">
           <mxGeometry x="320" y="214" width="40" height="40" as="geometry" />
         </mxCell>
@@ -273,6 +282,22 @@
         </mxCell>
         <mxCell id="eUAzN2NPXyv_5R1AQx1b-28" value="Route table VPC" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.route_table;fillColor=#F58536;gradientColor=none;" vertex="1" parent="gsToLSdFo0IppxMBS_la-1">
           <mxGeometry x="615" y="20" width="65" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="eUAzN2NPXyv_5R1AQx1b-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="gsToLSdFo0IppxMBS_la-1" source="eUAzN2NPXyv_5R1AQx1b-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="323" y="78" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eUAzN2NPXyv_5R1AQx1b-48" value="Preso l&#39;URL del ALB&lt;div&gt;viene creato un CNAME&lt;/div&gt;&lt;div&gt;per rendere URL piú comprensibile&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eUAzN2NPXyv_5R1AQx1b-47">
+          <mxGeometry x="-0.11" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eUAzN2NPXyv_5R1AQx1b-44" value="Route53" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.route_53;" vertex="1" parent="gsToLSdFo0IppxMBS_la-1">
+          <mxGeometry x="40" y="54" width="52" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Jm0puidVKb6ZSggkoazJ-1" value="&lt;a href=&quot;data:page/id,-eEJlde8KDyH_leBeKcl&quot;&gt;cloudfront&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="gsToLSdFo0IppxMBS_la-1">
+          <mxGeometry x="326.5" y="65" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eUAzN2NPXyv_5R1AQx1b-2" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="-480" y="-308.5" width="170" height="390" as="geometry" />
@@ -317,6 +342,45 @@
         <mxCell id="eUAzN2NPXyv_5R1AQx1b-34" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=-90;" vertex="1" parent="1">
           <mxGeometry x="-408" y="-438" width="20" height="570" as="geometry" />
         </mxCell>
+        <mxCell id="eUAzN2NPXyv_5R1AQx1b-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#0000FF;" edge="1" parent="1" source="eUAzN2NPXyv_5R1AQx1b-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-458.8947368421052" y="-127.84210526315792" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-626" y="-210" />
+              <mxPoint x="-459" y="-210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eUAzN2NPXyv_5R1AQx1b-42" value="Target Group" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eUAzN2NPXyv_5R1AQx1b-41">
+          <mxGeometry x="-0.1718" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eUAzN2NPXyv_5R1AQx1b-36" value="ALB" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.application_load_balancer;fillColor=#F58536;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-645" y="-236" width="39" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="eUAzN2NPXyv_5R1AQx1b-37" value="" style="whiteSpace=wrap;html=1;fillColor=none;fontColor=#000000;strokeColor=#C73500;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="-668" y="-111" width="530" height="161" as="geometry" />
+        </mxCell>
+        <mxCell id="eUAzN2NPXyv_5R1AQx1b-39" value="&lt;font color=&quot;#cc6600&quot;&gt;Target group per ECS: il traffico HTTP che si puó avere mediante ALB con i container viene rindirizzato al Target Group per HTTPS&amp;nbsp; &amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-605" y="10" width="430" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eUAzN2NPXyv_5R1AQx1b-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;dashed=1;" edge="1" parent="1" source="eUAzN2NPXyv_5R1AQx1b-36" target="eUAzN2NPXyv_5R1AQx1b-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eUAzN2NPXyv_5R1AQx1b-46" value="ALB possiede un URL utilizzato per&amp;nbsp;&lt;div&gt;stabilire le connessioni con esso&lt;/div&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eUAzN2NPXyv_5R1AQx1b-45">
+          <mxGeometry x="0.2605" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="-eEJlde8KDyH_leBeKcl" name="cloudfront">
+    <mxGraphModel dx="716" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
